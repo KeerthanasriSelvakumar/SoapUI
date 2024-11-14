@@ -6,7 +6,7 @@ steps:
     script: |
       # Download the SoapUI installer
       $soapuiUrl = "https://dl.eviware.com/soapuios/5.7.2/SoapUI-x64-5.7.2.exe"
-      $installerPath = "$env:USERPROFILE\Downloads\SoapUIInstaller.exe"
+      $installerPath = "$env:USERPROFILE\Downloads\SoapUI-x64-5.7.2.exe"
       Invoke-WebRequest -Uri $soapuiUrl -OutFile $installerPath
 
       # Silent installation
